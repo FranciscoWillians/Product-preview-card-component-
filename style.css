@@ -1,0 +1,155 @@
+/*### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "montserrat", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh-0.1px);
+    margin: 0 1.5rem;
+}
+
+
+.main {
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    
+
+}
+
+.main h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.main p {
+    margin-bottom: 2rem;
+
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    
+    
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,.valor {
+    font-family: "Fraunces", sans-serif;
+}
+
+.valor {
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    
+}
+
+button,
+li {
+    font-family: inherit;
+
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+.text {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 0.20rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+    
+}
+li{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: center;
+    color: hsl(228, 12%, 48%)
+    
+}
+img {
+    border-radius: 1rem 0 0 1rem;
+}
+
+button{
+    margin-top: 2rem;
+    background-color:hsl(158, 36%, 37%) ;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.3rem 2rem;
+    border-radius: 0.625rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: grab;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button img{
+    margin-right: 0.5em;
+}
+
+button:hover{
+    background-color: hsl(158, 38%, 25%);
+    transition: 0.5s ;
+}
+
+@media (min-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
